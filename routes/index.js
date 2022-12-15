@@ -2,7 +2,7 @@ const express = require('express');
 
 const routes = express.Router();
 
-const { shiftRoutes } = require('./shift.routes');
+const { shiftRoutes } = require('./shift.route');
 
 routes.use('/shift', shiftRoutes);
 
