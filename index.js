@@ -1,5 +1,9 @@
 const express = require('express');
+
+const { routes } = require('./routes');
+
 require('./configs');
+
 
 const app = express();
 
@@ -10,6 +14,8 @@ app.listen(port);
 console.log('Sever is running on the port ' + port);
 
 app.get('/', function (req, res) {
- return res.json('Hello from the server! 🚀 🚀 🚀');
+    return res.json('Hello from the server! 🚀 🚀 🚀');
 });
+
+app.use(routes)
 
