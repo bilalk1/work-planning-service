@@ -1,4 +1,5 @@
 const express = require('express');
+require('./configs');
 
 const app = express();
 
